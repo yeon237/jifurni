@@ -6,7 +6,7 @@
     margin: 0; padding: 0;
     font-family: Arial, 'Roboto', 'san-serif', 'Noto Sans KR', sans-serif, 'Noto Serif', serif;
 }
-a { text-decoration: none !important; }
+a { text-decoration: none !important; color: #1A1A1A;}
 img { border: 0; }
 ul { list-style: none; }
 
@@ -27,7 +27,8 @@ ul { list-style: none; }
     position:fixed;
     z-index: 10;
     background-color: #fff;
-
+    overflow: hidden;
+    border-bottom: 1px solid #E7E7E7;
 }
 
 #header_inner .h_center {
@@ -35,37 +36,103 @@ ul { list-style: none; }
     margin: 0 auto;
 }
 
-.logo {
-    width: 15%;
-    height: 120px;
-    float: left;
-    background-color: darkgray;
+#header_sub_inner {
+    display: none;
+    position: fixed;
+    height: 240px;
+    background: #fff;
+    top: 120px;
+    width: 100%;
+    z-index: 3;
+    border-bottom: 1px solid #E7E7E7;
+    visibility: hidden;
 }
 
-/* .logo a {
-    display: block;
-    width: 100%;
-    height: 100%;
-} */
+.logo {
+    width: 141px;
+    float: left;
+    padding-top: 45px;
+    
+}
 
 .gnb_container {
-    width: 65%;
     height: 120px;
     float: left;
-
-    
-    background-color: darksalmon;
-}
-
-/* .menu {
     margin: 0 auto;
 }
-*/
-.search {
-    width: 20%;
-    height: 120px;
+
+.gnb_container .menu {
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: -0.02em;
+    color: #1A1A1A;
+}
+
+.menu > li {
     float: left;
-    background-color: darkseagreen; 
+    padding: 45px 96px 0 0;
+}
+
+.menu > li:last-child {
+    padding-right: 0;
+}
+
+.menu > li:hover .lnb {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu > li:hover #header_sub_inner {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu .lnb {
+    visibility: hidden;
+    margin-top: 65px;
+    position: fixed;
+}
+
+.search {
+    width: 196px;
+    float: right;
+    padding-top: 45px;
+    position: relative;
+}
+
+.search_box .m_search {
+    position: absolute;
+    width: 120px;
+    height: 24px;
+    border: none;
+    border-bottom: 1px solid #1A1A1A;
+}
+
+.search_box .btn_search {
+    position: absolute;
+    background-image: url(../images/search.png);
+    width: 24px;
+    height: 24px;
+    right: 42px;
+    border-style: none;
+}
+
+.search_box .btn_trigger {
+    position: absolute;
+    background-image: url(../images/hamburger.png);
+    width: 24px;
+    height: 24px;
+    right: 0;
+    border-style: none;
+}
+
+.search_box button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
 }
 
 #main_img {

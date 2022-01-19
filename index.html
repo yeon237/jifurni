@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 <body>
     <div id="wrap">
@@ -16,28 +17,46 @@
         <header id="header">
             <div id="header_inner">
                 <div class="h_center">
-                    <div class="logo"><a href="#">Jifurni</a></div>
+                    <div class="logo"><a href="#"><img src="./images/logo.png" alt="Jifurni"></a></div>
                     <nav class="gnb_container">
                         <ul class="menu">
-                            <li>PRODUCT</li>
-                                <ul>
-                                    <li>HELENA</li>
-                                    <li>CALIAS</li>
+                            <li><a href="#">PRODUCT</a>
+                                <ul class="lnb">
+                                    <li><a href="#">HELENA</a></li>
+                                    <li><a href="#">CALIAS</a></li>
                                 </ul>
-                            <li>TECHNOLOGY</li>
-                            <li>FURNISHING</li>
-                            <li>SHOWROOM</li>
+                            </li>
+                            <li><a href="#">TECHNOLOGY</a>
+                                <ul class="lnb">
+                                    <li><a href="#">HELENA</a></li>
+                                    <li><a href="#">CALIAS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FURNISHING</a>
+                                <ul class="lnb">
+                                    <li><a href="#">HELENA</a></li>
+                                    <li><a href="#">CALIAS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SHOWROOM</a>
+                                <ul class="lnb">
+                                    <li><a href="#">HELENA</a></li>
+                                    <li><a href="#">CALIAS</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div class="search">
                         <div class="search_box">
-                            <input type="text" name="" id="">
-                            <button type="submit"></button>
+                            <input type="text" class="m_search">
+                            <button type="submit" class="btn_search" title="검색"></button>
+                            <button type="submit" class="btn_trigger" title="메뉴"></button>
                         </div>
                     </div>
-                    <div class="trigger"><a href=""></a></div>
+                    <!-- <div class="trigger"><a href="#"></a></div> -->
                 </div>
             </div>
+            <div id="header_sub_inner"></div>
             <!-- 메인 이미지 -->
             <div id="main_img">
                 <div class="visual">
@@ -65,38 +84,17 @@
                             <p>장인의 노하우와 기술력</p>
                             <button class="btn_white">자세히 보기</button>
                         </li>
-                        <li></li>
-                        <li></li>
+                        <li class="02">
+                            <h3>인체에 무해한</h3>
+                            <p>ICAP의 약품으로 가공</p>
+                            <button class="btn_white">자세히 보기</button>
+                        </li>
+                        <li class="03">
+                            <h3>기능성 패브릭</h3>
+                            <p>스위브로 업그레이드</p>
+                            <button class="btn_white">자세히 보기</button>
+                        </li>
                     </ul>
-                    <!-- <div class="box">
-                        <div class="img_01">
-                            <div class="txt_info">
-                                <h3><span>최고 품질의 가죽</span></h3>
-                                <p><span>장인의 노하우와 기술력</span></p>
-                            </div>
-                            <div class="btn_wrap">
-                                <a href="#" class="">자세히 보기</a>
-                            </div>
-                        </div>
-                        <div class="img_02">
-                            <div class="txt_info">
-                                <h3><span>인체에 무해한</span></h3>
-                                <p><span>ICAP의 약품으로 가공</span></p>
-                            </div>
-                            <div class="btn_wrap">
-                                <a href="#" class="">자세히 보기</a>
-                            </div>
-                        </div>
-                        <div class="img_03">
-                            <div class="txt_info">
-                                <h3><span>기능성 패브릭</span></h3>
-                                <p><span>스위브로 업그레이드</span></p>
-                            </div>
-                            <div class="btn_wrap">
-                                <a href="#" class="">자세히 보기</a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </section>
             <!-- // 컨텐츠 01 -->
