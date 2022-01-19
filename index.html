@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/swiper.css">
 </head>
 <body>
     <div id="wrap">
@@ -53,19 +53,46 @@
                             <button type="submit" class="btn_trigger" title="메뉴"></button>
                         </div>
                     </div>
-                    <!-- <div class="trigger"><a href="#"></a></div> -->
                 </div>
             </div>
             <div id="header_sub_inner"></div>
             <!-- 메인 이미지 -->
-            <div id="main_img">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="txt">
+                            <h3><span>매일이 여유 가득한 휴가 같도록</span></h3>
+                            <p><span>Holiday Life</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="txt">
+                            <h3><span>하이퀄리티 인테리어</span></h3>
+                            <p><span>Jifurni Life</span></p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="txt">
+                            <h3><span>매일이 여유 가득한 휴가 같도록</span></h3>
+                            <p><span>Holiday Life</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination jifurni"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- <div id="main_img">
                 <div class="visual">
                     <div class="txt">
                         <h3><span>매일이 여유 가득한 휴가 같도록</span></h3>
                         <p><span>Holiday Life</span></p>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <!-- // 메인 이미지 -->
         </header>
         <!-- // 헤더 -->
@@ -78,18 +105,19 @@
                         <h3>다르게, 더 바르게</h3>
                         <p>Jifurni만의 특별함, 함께 확인해보세요.</p>
                     </div>
+                    <div class="line"></div>
                     <ul class="box">
-                        <li class="01">
+                        <li class="img_01">
                             <h3>최고 품질의 가죽</h3>
                             <p>장인의 노하우와 기술력</p>
                             <button class="btn_white">자세히 보기</button>
                         </li>
-                        <li class="02">
+                        <li class="img_02">
                             <h3>인체에 무해한</h3>
                             <p>ICAP의 약품으로 가공</p>
                             <button class="btn_white">자세히 보기</button>
                         </li>
-                        <li class="03">
+                        <li class="img_03">
                             <h3>기능성 패브릭</h3>
                             <p>스위브로 업그레이드</p>
                             <button class="btn_white">자세히 보기</button>
@@ -158,5 +186,22 @@
         <!-- // 푸터 -->
     </div>
 <script src="./js/jquery-3.6.0.min.js"></script>
-</body>
+<script src="./js/common.js"></script></body>
+<script src="./js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    },
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+});
+</script>
 </html>
