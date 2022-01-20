@@ -331,12 +331,29 @@ ul { list-style: none; }
 
 /* 메인 배너 */
 
-#main_banner {
+.bg-holder#main_banner {
     width: 100%;
-    height: 400px;
-    margin: 0 auto;
+    min-height: 400px;
+    margin: 0;
     background:url(../images/main_banner.png);
+    background-position: center;
     text-align: center;
+    background-repeat: repeat;
+	background-size:cover;
+	overflow:hidden;
+    position: relative;
+}
+
+
+.container {
+    position: relative;
+    cursor: pointer;
+    min-height: 400px;
+}
+
+.bg-holder {
+    width: 100%;
+    height: 100%;
 }
 
 #main_banner h3 {
