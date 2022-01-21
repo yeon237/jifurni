@@ -32,5 +32,5 @@ swiper.on('slideChange', function () {
 
 
 $('.bg-holder').parallaxScroll({
-    friction: 0.5
+    friction: 0.15
 });

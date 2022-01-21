@@ -12,3 +12,7 @@ $("#header_sub_inner").on({
         $('#header_sub_inner').hide();
     }
 });
+
+$('.content').click(function(){
+    //메뉴 리스트 보이게
+});
