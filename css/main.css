@@ -13,7 +13,6 @@
 #section_01 {
     width: 1440px;
     margin: 0 auto;
-    padding: 0 130px;
 }
 
 .special {
@@ -199,30 +198,18 @@
 
 }
 
+/* 미디어 쿼리 
+주의점 : css속성 제일 밑에 작성해야한다. 공통사항 제외하고 변경하고싶은 사항 작성*/
 
 @media screen and (max-width:767px) {
 
-    /* 메인이미지 swiper 버튼 */
-    .swiper-button-next{
-        display: none;
-    }
-
-    .swiper-button-prev{
-        display: none;
-    }
-
-    .swiper-container {
-        width: 100%;
-        height: 500px;
-    }
-
+    
     /* 메인 배너 */
     #main_banner h3 {
         padding-top: 90px;
     }
     
     #main_banner h3 span {
-        color: #fff;
         font-family: 'Noto Serif';
         font-size: 40px;
         font-weight: 100;
@@ -230,18 +217,38 @@
     }
     
     #main_banner p span {
-        color: #fff;
-        font-weight: 350;
-        font-size: 20px;
         line-height: 80px;
         letter-spacing: 0.1em;
     }
     
+    /* 컨텐츠 01 */
+
+    #section_01 {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .special {
+        margin: 0;
+    }
+
+    .box .img_01 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .box .img_02 {
+        margin-bottom: 60px;
+    }
+
+    .box .img_03 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
 
     /* 컨텐츠 02 */
     #section_02 {
         width: 90%;
-        margin: 0 auto;
     }
     
     .box01 {
@@ -255,7 +262,7 @@
     }
     
     .box01 .item_txt {
-        width: 100vw;
+        width: 100%;
         height: 450px;
         padding-left: 100px;
     }
@@ -320,17 +327,93 @@
 
     #section_01 {
         width: 100%;
-        margin: 0 auto;
-        padding: 0 130px;
+        padding: 0px;
     }
 
     .special {
-    width: 100%;
-    margin: 130px 0 130px;
+        width: 100%;
+        margin: 130px 0 130px;
+    }
+
+    .box .img_01 {
+        width: 30%;
+        margin-right: 20px;
+    }
+    
+    .box .img_02 {
+        width: 30%;
+        padding: 0px;
+    }
+
+    .box .img_03 {
+        width: 30%;
+        margin-left: 20px;
+    }
+
+    .box h3 {
+        font-size: 20px;
+    }
+    
+    .box p {
+        font-size: 20px;
+    }
+    
+    #section_02 {
+        width: 100%;
+    }
+
+    .box01 {
+        padding: 50px;
+    }
+
+    .box01 .item_img {
+        width: 100%;
+    }
 }
 
-}
+@media screen  and (min-width:1241px) and (max-width:1458px) {
 
-@media screen and (min-width:1440px) {
+    #section_01 {
+        width: 100%;
+        padding: 0px;
+    }
 
+    .box .img_01 {
+        width: 30%;
+        margin-right: 20px;
+    }
+    
+    .box .img_02 {
+        width: 30%;
+        padding: 0px;
+    }
+
+    .box .img_03 {
+        width: 30%;
+        margin-left: 20px;
+    }
+
+    #section_02 {
+        width: 94%;
+    }
+
+
+    .box01 .item_img {
+        width: 50%;
+    }
+    
+    .box01 .item_txt {
+        width: 45%;
+        padding-left: 0px;
+    }
+
+    .box02 .item_img {
+        width: 45%;
+    }
+    
+    .box02 .item_txt {
+        width: 50%;
+    
+    }
+    
 }
