@@ -13,6 +13,11 @@ $("#header_sub_inner").on({
     }
 });
 
-$('.content').click(function(){
-    //메뉴 리스트 보이게
+$('.btn_trigger').click(function(){
+    if($('#mobile_menu').is(':visible')) {
+        $('#mobile_menu').hide();
+    } else {
+        $('#mobile_menu').show();
+    }
 });
+

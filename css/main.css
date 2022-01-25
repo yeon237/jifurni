@@ -209,13 +209,7 @@
         padding-top: 90px;
     }
     
-    #main_banner h3 span {
-        font-family: 'Noto Serif';
-        font-size: 40px;
-        font-weight: 100;
-        letter-spacing: -0.03em;
-    }
-    
+        
     #main_banner p span {
         line-height: 80px;
         letter-spacing: 0.1em;
@@ -225,7 +219,6 @@
 
     #section_01 {
         width: 100%;
-        margin: 0 auto;
     }
 
     .special {
@@ -257,53 +250,25 @@
     
     .box01 .item_img {
         width: 100vw;
-        height: 450px;
-        background: url(../images/img_helena.png) no-repeat;
     }
     
     .box01 .item_txt {
         width: 100%;
-        height: 450px;
-        padding-left: 100px;
-    }
-    
-    .tit h1 span {
-        font-weight: 500;
-        font-size: 55px;
-        line-height: 100px;
-    }
-    
-    .tit p span {
-        font-weight: 300;
-        font-size: 30px;
-        letter-spacing: -0.05em;
-    }
-    
-    .item_txt .s {
-        font-size: 18px;
-        padding-top: 50px;
-        color: #626262;
-        letter-spacing: -0.05em;
-    
+        height: 330px;
     }
     
     .box02 {
-        overflow: hidden;
-        padding-bottom: 130px;
-    }
-    
-    .box02 .item_img {
-        float: right;
-        width: 720px;
-        height: 450px;
-        background: url(../images/img_calias.png) no-repeat;
+        padding-bottom: 50px;
     }
     
     .box02 .item_txt {
-        width: calc(100% - 720px);
-        height: 450px;
-        float: left;
+        width: 100%;
+        height: 330px;
     
+    }
+
+    .btn_black {
+        margin-top: 40px;
     }
 }
 
@@ -325,6 +290,7 @@
         height: 600px;
     }
 
+    /* 컨텐츠 01 */
     #section_01 {
         width: 100%;
         padding: 0px;
@@ -358,6 +324,7 @@
         font-size: 20px;
     }
     
+    /* 컨텐츠 02 */
     #section_02 {
         width: 100%;
     }
@@ -367,7 +334,29 @@
     }
 
     .box01 .item_img {
-        width: 100%;
+        width: 50%;
+    }
+    
+    .box01 .item_txt {
+        width: 45%;
+        padding-left: 10px; 
+    }
+
+    .box02 {
+        padding: 0 50px 50px;
+    }
+
+
+    .box02 .item_img {
+        width: 45%;
+    }
+
+    .box02 .item_txt {
+        width: 50%;
+    }
+
+    .btn_black {
+        margin-top: 40px;
     }
 }
 

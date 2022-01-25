@@ -98,6 +98,26 @@ ul { list-style: none; }
     padding: 20px;
 }
 
+#mobile_menu {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9;
+    background-color: #fff;
+    border-bottom: 1px solid #E7E7E7;
+    display: none;
+}
+
+#mobile_menu > #menu {
+    width: 100%;
+    position: absolute;
+    top: 180px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+}
+
+
 .search {
     width: 196px;
     float: right;
@@ -122,6 +142,15 @@ ul { list-style: none; }
     border-style: none;
 }
 
+.search_box .btn_language {
+    position: absolute;
+    background-image: url(../images/language.png);
+    width: 24px;
+    height: 24px;
+    right: 0;
+    border-style: none;
+}
+
 .search_box .btn_trigger {
     position: absolute;
     background-image: url(../images/hamburger.png);
@@ -129,6 +158,7 @@ ul { list-style: none; }
     height: 24px;
     right: 0;
     border-style: none;
+    display: none;
 }
 
 .search_box button {
@@ -265,30 +295,33 @@ ul { list-style: none; }
 /* 푸터 */
 
 #footer {
+    position: relative;
     width: 100%;
     height: 140px;
     background-color: #2E2E2E;
 }
 
 #footer > #inner {
+    position: relative;
     width: 1440px;
     margin: 0 auto;
 }
 
 #inner .footer_logo {
+    position: absolute;
     width: 140px;
     height: 32px;
-    float: left;
-    padding-top: 50px;
+    top: 50px;
     
 }
 
 #inner .add {
-    float: left;
-    padding: 50px 0 0 100px;
+    position: absolute;
     color: #999;
     font-size: 14px;
     line-height: 20px;
+    padding-left: 14rem;
+    top: 50px;
 }
 
 
@@ -327,17 +360,6 @@ ul { list-style: none; }
         display: none;
     }
     
-    #mobile_menu {
-        width: 100%;
-        position: relative;
-        z-index: 11;
-        background-color: #fff;
-    }
-
-    #mobile_menu > #menu {
-        position: absolute;
-        top: 121px;
-    }
     
     .search {
         width: 50%;
@@ -348,6 +370,10 @@ ul { list-style: none; }
     }
     
     .search_box .btn_search {
+        display: none;
+    }
+    
+    .search_box .btn_language {
         display: none;
     }
     
@@ -381,45 +407,101 @@ ul { list-style: none; }
 
     /* 푸터 */
 
-    #footer {
-        height: 100%;
-        background-color: #2E2E2E;
-    }
-
     #footer > #inner {
-        width: 100%;
-        height: 100%;
-    }
-
-    #inner .footer_logo {
-        width: 100%;
-        padding: 50px 20px;
+        width: 90%;
     }
 
     #inner .add {
-        width: 94%;
-        padding-left: 20px;
+        width: 80%;
+        font-size: 0.95em;
+        padding-left: 10rem;
+        top: 40px;
     }
+
+
 
 }
 
 @media screen and (min-width:768px) and (max-width:1240px) {
 
+    
+    /* 헤더 */
     #header {
         width: 100%;
         height: 600px;
     }
+    
+    #header_inner {
+        height: 120px;
+    }
 
-    #footer > #inner {
+    #header_inner .h_center {
         width: 100%;
     }
+    
+    #header_sub_inner {
+        display: none;
+    }
+    
+    .logo {
+        padding: 45px 0 0 20px;
+    }
+    
+    .gnb_container {
+        display: none;
+    }
+    
+    .gnb_container .menu {
+        display: none;
+    }
+    
+    
+    .search {
+        width: 50%;
+    }
+    
+    .search_box .m_search {
+        display: none;
+    }
+    
+    .search_box .btn_search {
+        display: none;
+    }
+    
+    .search_box .btn_language {
+        display: none;
+    }
+    
+    .search_box .btn_trigger {
+        display: block;
+        right: 20px;
+    }
+
+
+    #footer > #inner {
+        width: 90%;
+    }
+
+    #inner .add {
+        width: 80%;
+        font-size: 0.95em;
+        padding-left: 10rem;
+        top: 40px;
+    }
+
+
 
 }
 
 
 @media screen and (min-width:1241px) and (max-width:1458px) {
     
+    
     #mobile_menu {
+        display: none;
+    }
+
+    #mobile_menu > #menu {
         display: none;
     }
 
@@ -428,11 +510,10 @@ ul { list-style: none; }
     }
 
     #inner .add {
-        float: left;
-        padding: 50px 0 0 50px;
-        color: #999;
-        font-size: 0.8em;
-        line-height: 20px;
+        width: 80%;
+        font-size: 0.95em;
+        padding-left: 11rem;
+        top: 40px;
     }
 
     
