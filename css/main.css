@@ -201,7 +201,99 @@
 /* 미디어 쿼리 
 주의점 : css속성 제일 밑에 작성해야한다. 공통사항 제외하고 변경하고싶은 사항 작성*/
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:320px) and (max-width:400px) {
+
+    #section_01 {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .special .title p {
+            font-size: 2.3rem;
+        }
+    
+    .special .line {
+        margin: 60px auto;
+    }
+
+    .special {
+        width: 100%;
+        margin: 60px 0 60px;
+    }
+
+    .box .img_01 {
+        width: 100%;
+        margin-right: 0px;
+    }
+    
+    .box .img_02 {
+        width: 100%;
+        margin: 60px 0;
+        padding: 0px;
+    }
+
+    .box .img_03 {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    #main_banner p {
+        padding-top: 20px;
+    }
+
+    #main_banner p span {
+        line-height: 40px;
+        letter-spacing: 0.1em;
+        font-size: 23px;
+    }
+    
+     /* 컨텐츠 02 */
+    #section_02 {
+        width: 90%;
+    }
+
+    .box01 {
+        padding: 60px 0 160px;
+    }
+    
+    .box02 {
+        padding-bottom: 160px;
+    }
+    
+    .box01 {
+        padding: 60px 0;
+    }
+    
+    .box01 .item_img {
+        width: 100%;
+    }
+    
+    .box01 .item_txt {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .box02 {
+        padding-bottom: 50px;
+    }
+
+    .box02 .item_img {
+        width: 100%;
+    }
+    
+    .box02 .item_txt {
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .btn_black {
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (min-width:401px) and (max-width:767px) {
 
     
     /* 메인 배너 */
@@ -231,7 +323,10 @@
     }
 
     .box .img_02 {
+        width: 100%;
+
         margin-bottom: 60px;
+        padding: 0px;
     }
 
     .box .img_03 {

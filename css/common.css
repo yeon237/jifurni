@@ -318,7 +318,7 @@ ul { list-style: none; }
 #inner .add {
     position: absolute;
     color: #999;
-    font-size: 14px;
+    font-size: 0.95em;
     line-height: 20px;
     padding-left: 14rem;
     top: 50px;
@@ -328,7 +328,119 @@ ul { list-style: none; }
 /* 미디어 쿼리 
 주의점 : css속성 제일 밑에 작성해야한다. 공통사항 제외하고 변경하고싶은 사항 작성*/
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:320px) and (max-width:400px) {
+
+    /* 헤더 */
+   
+    #header {
+        width: 100%;
+        height: 400px;
+    }
+    #header_inner {
+        height: 120px;
+    }
+    
+    #header_inner .h_center {
+        width: 100%;
+    }
+    
+    #header_sub_inner {
+        display: none;
+    }
+    
+    .logo {
+        padding: 45px 0 0 20px;
+        width: 80px;
+    }
+    
+    .gnb_container {
+        display: none;
+    }
+    
+    .gnb_container .menu {
+        display: none;
+    }
+
+    .search {
+        width: 50%;
+    }
+    
+    .search_box .m_search {
+        display: none;
+    }
+    
+    .search_box .btn_search {
+        display: none;
+    }
+    
+    .search_box .btn_language {
+        display: none;
+    }
+    
+    .search_box .btn_trigger {
+        display: block;
+        right: 20px;
+    }
+    
+    .search_box button {
+        display: none;
+    }
+    
+    /* 메인이미지 swiper 버튼 */
+    .swiper-button-next{
+        display: none;
+    }
+
+    .swiper-button-prev{
+        display: none;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 400px;
+    }
+
+    .swiper-wrapper .txt {
+        padding-top: 100px;
+    }
+
+    .swiper-wrapper .txt h3 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    
+    .swiper-wrapper .txt p span {
+        font-size: 2rem;
+        line-height: 100px;
+    }
+    
+    /* 푸터 */
+
+    #footer {
+        height: 260px;
+    }
+
+    #footer > #inner {
+        width: 100%;
+    }
+
+    #inner .footer_logo {
+        left: 20px;
+    }
+
+    #inner .add {
+        width: 80%;
+        padding-left: 0;
+        top: 120px;
+        left: 20px;
+        font-size: 0.80em;
+    }
+
+
+}
+
+
+@media screen and (min-width:401px) and (max-width:767px) {
     
     /* 헤더 */
     #header {
@@ -382,10 +494,6 @@ ul { list-style: none; }
         right: 20px;
     }
     
-    .btn_trigger a:hover > #mobile_menu {
-        display: block;
-    }
-    
     .search_box button {
         display: none;
     }
@@ -413,9 +521,10 @@ ul { list-style: none; }
 
     #inner .add {
         width: 80%;
-        font-size: 0.95em;
         padding-left: 10rem;
         top: 40px;
+        font-size: 0.85em;
+
     }
 
 
@@ -484,19 +593,24 @@ ul { list-style: none; }
 
     #inner .add {
         width: 80%;
-        font-size: 0.95em;
         padding-left: 10rem;
         top: 40px;
+        font-size: 0.85em;
     }
-
-
-
 }
 
 
 @media screen and (min-width:1241px) and (max-width:1458px) {
     
     
+    #header_inner .h_center {
+        width: 100%;
+    }
+    
+    .gnb_container {
+        width: calc(100% - 337px);
+    }
+
     #mobile_menu {
         display: none;
     }
@@ -511,7 +625,6 @@ ul { list-style: none; }
 
     #inner .add {
         width: 80%;
-        font-size: 0.95em;
         padding-left: 11rem;
         top: 40px;
     }
