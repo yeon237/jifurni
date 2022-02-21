@@ -315,6 +315,46 @@ input:focus {outline: none;}
 /* 푸터 */
 
 #footer {
+    width: 100%;
+    height: 140px;
+    background-color: #2E2E2E;
+}
+
+#footer > #inner {
+    width: 1440px;
+    height: 140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#inner .footer_logo {
+    width: 140px;
+    height: 32px;
+}
+
+#inner .f_txt {
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+#inner .f_txt .add {
+    color: #999;
+    font-size: 0.95em;
+    line-height: 20px;
+}
+
+#inner .f_txt .copy {
+    color: #999;
+    font-size: 0.95em;
+    line-height: 20px;
+}
+
+/* 
+
+#footer {
     position: relative;
     width: 100%;
     height: 140px;
@@ -351,7 +391,7 @@ input:focus {outline: none;}
     line-height: 20px;
     padding-left: 14rem;
     top: 80px;
-}
+} */
 
 
 /* 미디어 쿼리 
@@ -454,14 +494,10 @@ input:focus {outline: none;}
     }
 
     #inner .footer_logo {
-        left: 20px;
     }
 
     #inner .add {
         width: 80%;
-        padding-left: 0;
-        top: 120px;
-        left: 20px;
         font-size: 0.80em;
     }
 
@@ -545,13 +581,11 @@ input:focus {outline: none;}
     /* 푸터 */
 
     #footer > #inner {
-        width: 90%;
+        width: 100%;
     }
 
     #inner .add {
         width: 80%;
-        padding-left: 10rem;
-        top: 40px;
         font-size: 0.85em;
     }
 
@@ -617,18 +651,15 @@ input:focus {outline: none;}
 
 
     #footer > #inner {
-        width: 90%;
+        width: 100%;
     }
 
     #inner .add {
         width: 80%;
-        padding-left: 10rem;
-        top: 40px;
         font-size: 0.85em;
     }
 
     #inner .copy {
-        padding-left: 10rem;
     }
 }
 
@@ -653,16 +684,13 @@ input:focus {outline: none;}
     }
 
     #footer > #inner {
-        width: 90%;
+        width: 100%;
     }
 
     #inner .add {
         width: 80%;
-        padding-left: 11rem;
-        top: 40px;
     }
 
     #inner .copy {
-        padding-left: 11rem;
     }
 }
