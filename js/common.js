@@ -21,3 +21,13 @@ $('.btn_trigger').click(function(){
     }
 });
 
+
+$(window).resize(function() {
+	var width = $(window).width();
+
+	if(width >= 767) {
+		if ($("#mobile_menu").is(":visible")) {
+			$("#mobile_menu").hide();
+		}
+	}
+});
